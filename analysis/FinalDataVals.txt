@@ -1,0 +1,14 @@
+Tue 14 Nov 14:25:19 GMT 2023
+
+Program - Hn
+Avg CPU : 344.797%
+Max Mem : 0.22%
+
+Program - prog1
+Avg CPU : 37.2435%
+Max Mem : 48.62%
+
+Program - test
+Avg CPU : 99.7415%
+Max Mem : 1.44%
+

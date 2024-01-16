@@ -1,0 +1,10 @@
+FROM almalinux:latest
+
+RUN useradd -ms /bin/bash script-user
+USER script-user
+
+COPY --chown=script-user:script-user test .
+
+RUN chmod 766 test
+
+CMD ["./test", "/A03-Volume/Testfile-test"]

@@ -1,0 +1,10 @@
+FROM almalinux:latest
+
+RUN useradd -ms /bin/bash script-user
+USER script-user
+
+COPY --chown=script-user:script-user hn__4.3.03__va_nFXnp12 .
+
+RUN chmod 766 hn__4.3.03__va_nFXnp12
+
+CMD ["./hn__4.3.03__va_nFXnp12", "/A03-Volume/Testfile-hn__4.3.03__va_nFXnp12"]
